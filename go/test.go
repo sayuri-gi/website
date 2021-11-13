@@ -16,7 +16,7 @@ func main() {
 
 	defer f.Close()
 
-	_, err2 := f.WriteString("old falcon\n")
+	_, err2 := f.WriteString("old falcon.\n")
 
 	if err2 != nil {
 		log.Fatal(err2)

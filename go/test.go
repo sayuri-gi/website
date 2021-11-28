@@ -49,7 +49,7 @@ type IssuerJSON struct {
 type KeyJSON struct {
 	Type         string            `json:"type"`
 	SHA256       string            `json:"sha256"`
-	Certificates []CertificateJSON `json:"certificates"`
+	Certificates []CertificateJSON `json:"certificates",omitempty`
 }
 
 type DataJSON struct {
@@ -154,6 +154,10 @@ func main() {
 			fmt.Println(rsaPublicKey.N)
 			fmt.Println(rsaPublicKey.E)
 
+			hexa := rsaPublicKey.N.Bytes()
+			hexaToString := fmt.Sprintf("%x", hexa)
+			fmt.Println(hexaToString)
+
 			SubjectPublicKeyInfo := cert.RawSubjectPublicKeyInfo
 			SubjectPublicKeyInfoSha256 := sha256.Sum256(SubjectPublicKeyInfo)
 
@@ -168,8 +172,8 @@ func main() {
 
 		} else if isECDSA {
 			params := cert.PublicKey.(*ecdsa.PublicKey).Curve.Params()
-			fmt.Println("Curve: ")
-			fmt.Println(params)
+			//fmt.Println("Curve: ")
+			//fmt.Println(params)
 
 			curve := params.Name
 			fmt.Println(curve)
@@ -234,6 +238,8 @@ func main() {
 
 		JsonCertificate.IssuerJSON.CO = issuer.CommonName
 		JsonCertificate.IssuerJSON.O = issuer.Organization[0]
+		JsonCertificate.IssuerJSON.Key.Type = key.Type
+		JsonCertificate.IssuerJSON.Key.SHA256 = key.SHA256
 
 		certificateSignature := cert.Signature
 		fmt.Println("Certificate Signature: ")
@@ -261,7 +267,7 @@ func main() {
 		return
 	}
 
-	fmt.Println(string(jsonFormatted))
+	//fmt.Println(string(jsonFormatted))
 
 	// open the file for writing
 	file, _ := os.Create("./static/testgo.json")

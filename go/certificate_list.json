@@ -1,0 +1,7 @@
+[
+  {
+    "pem": "isrg-root-ocsp-x1.pem",
+    "status" : "active",
+    "platform": "production"
+  }
+]

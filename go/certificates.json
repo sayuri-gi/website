@@ -1,0 +1,18 @@
+[
+  {
+    "name": "isrg-root-ocsp-x1"
+  },
+  { "name": "isrg-root-x1-cross-signed" },
+  { "name": "isrg-root-x2-cross-signed" },
+  { "name": "isrg-root-x1" },
+  { "name": "isrg-root-x2" },
+  { "name": "lets-encrypt-e1"},
+  { "name": "lets-encrypt-e2"},
+  { "name": "lets-encrypt-r3-cross-signed"},
+  { "name": "lets-encrypt-r4-cross-signed"},
+  { "name": "lets-encrypt-r3"},
+  { "name": "lets-encrypt-r4"},
+  { "name": "lets-encrypt-e1"},
+  { "name": "lets-encrypt-e2"},
+  { "name": "trustid-x3-root"}
+]

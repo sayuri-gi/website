@@ -15,9 +15,9 @@ The keys and certificates that will underlie Let's Encrypt have been generated. 
 
 The certificates over the public keys, of course, can be made public:
 
-* <a href="/certs/isrgrootx1.pem.txt">ISRG Root X1 Certificate</a>
-* <a href="/certs/letsencryptauthorityx1.pem.txt">Let's Encrypt Intermediate X1 CA Certificate</a>
-* <a href="/certs/letsencryptauthorityx2.pem.txt">Let's Encrypt Intermediate X2 CA Certificate</a>
+* [ISRG Root X1 Certificate](/certs/isrgrootx1.pem.txt)
+* [Let's Encrypt Intermediate X1 CA Certificate](/certs/letsencryptauthorityx1.pem.txt)
+* [Let's Encrypt Intermediate X2 CA Certificate](/certs/letsencryptauthorityx2.pem.txt)
 
 Let's Encrypt will issue certificates to subscribers from its intermediate CAs, allowing us to keep our root CA safely offline. IdenTrust will cross-sign our intermediates. This will allow our end certificates to be accepted by all major browsers while we propagate our own root.
 
@@ -29,4 +29,4 @@ The private keys for the ISRG root CA and the Let’s Encrypt intermediate CAs a
 
 All ISRG keys are currently RSA keys. We are planning to generate ECDSA keys later this year.
 
-The generation of these keys and certificates is an important step in getting Let's Encrypt ready to issue certificates. In the next few weeks, we'll be saying some more about our plans for going live. In the mean time, we would love for you to [get involved](https://letsencrypt.org/getinvolved/).
+The generation of these keys and certificates is an important step in getting Let's Encrypt ready to issue certificates. In the next few weeks, we'll be saying some more about our plans for going live. In the mean time, we would love for you to [get involved](/getinvolved/).

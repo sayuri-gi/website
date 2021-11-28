@@ -13,7 +13,7 @@ Let’s Encrypt is leaving beta today. We’re also excited to announce that fou
 
 Since our beta began in September 2015 we’ve issued more than 1.7 million certificates for more than 3.8 million websites. We’ve gained tremendous operational experience and confidence in our systems. The beta label is simply not necessary any more.
 
-<p class="text-center"><img src="/images/Issuance-April-10-2016.png" alt="Issuance as of April 10, 2016" style="width: 650px; margin-bottom: 17px;"/></p>
+![Issuance as of April 10, 2016](/images/Issuance-April-10-2016.png)
 
 We set out to encrypt 100% of the Web. We’re excited to be off to a strong start, and with so much support across the industry.
 
@@ -23,4 +23,4 @@ We set out to encrypt 100% of the Web. We’re excited to be off to a strong sta
 
 “We’re very proud to be a Gold Sponsor for Let’s Encrypt which leverages our industry-leading hardware security modules to protect their certificate authority system,” says Todd Moore, Vice President of Encryption Product Management at Gemalto. “Encryption by default is critical to privacy and security, and by working with Let’s Encrypt Gemalto is helping to deliver trust for the digital services that billions of people use every day.”
 
-Let’s Encrypt depends on industry and community support. Please consider [getting involved](https://letsencrypt.org/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).
+Let’s Encrypt depends on industry and community support. Please consider [getting involved](/getinvolved/), and if your company or organization would like to sponsor Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org).

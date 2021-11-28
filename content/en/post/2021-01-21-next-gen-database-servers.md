@@ -6,7 +6,7 @@ title: "The Next Gen Database Servers Powering Let's Encrypt"
 slug: next-gen-database-servers
 ---
 
-Let’s Encrypt helps to protect a huge portion of the Web by providing TLS certificates to more than [235 million websites](https://letsencrypt.org/stats/). A database is at the heart of how Let’s Encrypt manages certificate issuance. If this database isn’t performing well enough, it can cause API errors and timeouts for our subscribers. Database performance is the single most critical factor in our ability to scale while meeting service level objectives. In late 2020, we upgraded our database servers and we’ve been very happy with the results.
+Let’s Encrypt helps to protect a huge portion of the Web by providing TLS certificates to more than [235 million websites](/stats/). A database is at the heart of how Let’s Encrypt manages certificate issuance. If this database isn’t performing well enough, it can cause API errors and timeouts for our subscribers. Database performance is the single most critical factor in our ability to scale while meeting service level objectives. In late 2020, we upgraded our database servers and we’ve been very happy with the results.
 
 ## What exactly are we doing with these servers?
 
@@ -57,23 +57,23 @@ By going with AMD EPYC, we were able to get 64 physical CPU cores while keeping 
 
 We’ll start by looking at our median time to process a request because it best reflects subscribers’ experience. Before the upgrade, we turned around the median API request in \~90 ms. The upgrade decimated that metric to \~9 ms!
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-api-latency.png" alt="API Latency"></p>
+![API Latency](/images/2021.01.21-next-gen-db-api-latency.png)
 
 We can clearly see how our old CPUs were reaching their limit. In the week before we upgraded our primary database server, its CPU usage (from /proc/stat) averaged over 90%:
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-cpu-before.png" alt="CPU Usage Before Upgrade"></p>
+![CPU Usage Before Upgrade](/images/2021.01.21-next-gen-db-cpu-before.png)
 
 The new AMD EPYC CPUs sit at about 25%. You can see in this graph where we promoted the new database server from replica (read-only) to primary (read/write) on September 15.
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-cpu-after.png" alt="CPU Usage After Upgrade"></p>
+![CPU Usage After Upgrade](/images/2021.01.21-next-gen-db-cpu-after.png)
 
 The upgrade greatly reduced our overall database latency. The average query response time (from INFORMATION_SCHEMA) used to be \~0.45ms.
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-db-latency-before.png" alt="Database Latency Before Upgrade"></p>
+![Database Latency Before Upgrade](/images/2021.01.21-next-gen-db-db-latency-before.png)
 
 Queries now average *three times faster*, about 0.15ms.
 
-<p class="text-center"><img src="/images/2021.01.21-next-gen-db-db-latency-after.png" alt="Database Latency After Upgrade"></p>
+![Database Latency After Upgrade](/images/2021.01.21-next-gen-db-db-latency-after.png)
 
 ## OpenZFS and NVMe
 
@@ -91,4 +91,4 @@ This database upgrade was necessary as more people rely on Let’s Encrypt for t
 
 ## Support Let's Encrypt
 
-We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](/donate/) if it is within your means.

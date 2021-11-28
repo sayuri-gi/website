@@ -12,7 +12,7 @@ slug: extending-android-compatibility
 
 We’re happy to announce that we have developed a way for older Android devices to retain their ability to visit sites that use Let's Encrypt certificates after our cross-signed intermediates expire. We are no longer planning any changes in January that may cause compatibility issues for Let’s Encrypt subscribers.
 
-A recurring theme in [our posts](https://letsencrypt.org/2020/11/06/own-two-feet.html) about our upcoming chain switch has been our concern over the effects on users of Android operating systems prior to 7.1.1, whose devices don’t trust our ISRG Root X1. Thanks to some innovative thinking from our community and our wonderful partners at IdenTrust, we now have a solution that allows us to maintain wide compatibility. Critical to our mission as a nonprofit is to help create a more secure and privacy-respecting Web for as many people as possible. This work brings us closer to that goal.
+A recurring theme in [our posts](/2020/11/06/own-two-feet.html) about our upcoming chain switch has been our concern over the effects on users of Android operating systems prior to 7.1.1, whose devices don’t trust our ISRG Root X1. Thanks to some innovative thinking from our community and our wonderful partners at IdenTrust, we now have a solution that allows us to maintain wide compatibility. Critical to our mission as a nonprofit is to help create a more secure and privacy-respecting Web for as many people as possible. This work brings us closer to that goal.
 
 IdenTrust has agreed to issue a 3-year cross-sign for our ISRG Root X1 from their DST Root CA X3. The new cross-sign will be somewhat novel because it extends beyond the expiration of DST Root CA X3. This solution works because Android intentionally does not enforce the expiration dates of certificates used as trust anchors. ISRG and IdenTrust reached out to our auditors and root programs to review this plan and ensure there weren’t any compliance concerns.
 
@@ -20,7 +20,7 @@ As such, we will be able to provide subscribers with a chain which contains both
 
 We will not be performing our previously-planned chain switch on January 11th, 2021. Instead, we will be switching to provide this new chain by default in late January or early February. The transition should have no impact on Let’s Encrypt subscribers, much like our switch to our R3 intermediate earlier this month.
 
-<p class="text-center"><img src="/images/2020.12.21-android-compat-cert-chain.png" alt="Let's Encrypt Issuance Chains" width="600"></p>
+![Let's Encrypt Issuance Chains](/images/2020.12.21-android-compat-cert-chain.png)
 
 Some additional technical details follow.
 
@@ -50,4 +50,4 @@ We will continue to offer this same chain as an alternate. However, note that mo
 
 In the future we hope to share more technical details about how and why this plan works, demonstrate why the expiration of DST Root CA X3 doesn’t affect the security of the web, and what this plan means long-term for our subscribers and end-users on the web.
 
-We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](https://letsencrypt.org/donate/) if it is within your means.
+We depend on contributions from our supporters in order to provide our services. If your company or organization would like to [sponsor](/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). We ask that you make an [individual contribution](/donate/) if it is within your means.

@@ -431,17 +431,18 @@ html[dir="rtl"] .social-media-list {
     }
 }
 
-/*
- * Images in How It Works
- */
-.howitworks-figure {
-  text-align: center;
+img[width][height] {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: attr(width) / attr(height);
 }
 
-.howitworks-figure img {
-  width: 600px;
-  padding: 10px;
+.center-images img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .well {
     background-color: rgba(234,234,234,0.7);

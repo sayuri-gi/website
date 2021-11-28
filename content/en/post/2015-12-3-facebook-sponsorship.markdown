@@ -7,7 +7,7 @@ title: Facebook Sponsors Let's Encrypt
 slug: facebook-sponsorship
 ---
 
-We're happy to share today that <a href="https://www.facebook.com/">Facebook</a> is the newest <a href="/sponsors/">Gold sponsor</a> of Let’s Encrypt. Facebook has taken multiple important steps to support and advance encryption this year, and we are glad to see Let's Encrypt as the latest example.
+We're happy to share today that [Facebook](https://www.facebook.com/) is the newest [Gold sponsor](/sponsors/) of Let’s Encrypt. Facebook has taken multiple important steps to support and advance encryption this year, and we are glad to see Let's Encrypt as the latest example.
 
 According to Alex Stamos, Chief Security Officer at Facebook, "Making it easier for websites to deploy HTTPS encryption is an important step in improving the security of the whole internet, and Facebook is proud to support this effort."
 

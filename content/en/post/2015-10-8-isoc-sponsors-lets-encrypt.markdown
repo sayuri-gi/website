@@ -7,7 +7,7 @@ title: Internet Society Sponsors Let's Encrypt
 slug: isoc-sponsors-lets-encrypt
 ---
 
-We're pleased to announce that <a href="https://www.internetsociety.org/">Internet Society (ISOC)</a> has become a <a href="/sponsors/">Gold sponsor</a> of Let's Encrypt.
+We're pleased to announce that [Internet Society (ISOC)](https://www.internetsociety.org/) has become a [Gold sponsor](/sponsors/) of Let's Encrypt.
 
 According to Olaf Kolkman, "The Internet Society sees encryption as a new norm to enhance the security of, and thereby trust in, the Internet." We couldn't agree more.
 

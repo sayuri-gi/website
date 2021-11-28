@@ -11,7 +11,7 @@ OVHcloud, the largest hosting provider in Europe, has used Let’s Encrypt for T
 
 They considered building their own CA but determined the cost and complexity of doing so would be impractical. Instead, they build an ACME client to prepare for using Let’s Encrypt. It took about six months, “we simply followed the RFC and did a bit of reverse engineering of Certbot,” said Guillaume. In addition to a custom client, OVHcloud automated their Certificate Signing Request (CSR) process and certificate installation process. 
 
-<p class="text-center"><img src="/images/2021.10.28-OVHcloud-schematic.png" alt="Schematic of how OVHcloud automatically and simply gets Let's Encrypt certificates"></p>
+![Schematic of how OVHcloud automatically and simply gets Let's Encrypt certificates](/images/2021.10.28-OVHcloud-schematic.png)
 
 Getting a TLS certificate is on the critical path to onboarding a shared hosting client, so monitoring is a big part of OVHcloud’s success with Let’s Encrypt. They set up monitoring at every step in the delivery process: requesting the certificate, asking for challenges, waiting for validation, and requesting certificate creation. They also keep an eye on how long it takes to get a certificate (“it’s really fast”). OVHcloud also monitors our [status page](https://letsencrypt.status.io/) to stay apprised of our operational status.
 
@@ -19,7 +19,7 @@ Over 10,000 certificates are issued from Let’s Encrypt to OVHcloud every day. 
 
 OVHcloud is a longtime sponsor of ISRG so we’d like to close by thanking them for not just being great technical collaborators, but also financial supporters. 
 
-Check out our blog post about [how Shopify uses Let’s Encrypt certificates](https://letsencrypt.org/2021/09/14/speed-at-scale-shopify.html) for another example of how our certificates are used in the enterprise.
+Check out our blog post about [how Shopify uses Let’s Encrypt certificates](/2021/09/14/speed-at-scale-shopify.html) for another example of how our certificates are used in the enterprise.
 
 ## Supporting Let’s Encrypt
-As a nonprofit project, 100% of our funding comes from contributions from our community of users and supporters. We depend on their support in order to provide our services for the public benefit. If your company or organization would like to [sponsor](https://letsencrypt.org/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). If you can support us with a [donation](https://letsencrypt.org/donate/), we ask that you make an individual contribution.
+As a nonprofit project, 100% of our funding comes from contributions from our community of users and supporters. We depend on their support in order to provide our services for the public benefit. If your company or organization would like to [sponsor](/become-a-sponsor/) Let’s Encrypt please email us at [sponsor@letsencrypt.org](mailto:sponsor@letsencrypt.org). If you can support us with a [donation](/donate/), we ask that you make an individual contribution.

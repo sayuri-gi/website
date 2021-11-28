@@ -10,7 +10,7 @@ title: 'Let’s Encrypt: Delivering SSL/TLS Everywhere'
 slug: announcing-lets-encrypt
 ---
 
-Vital personal and business information flows over the Internet more frequently than ever, and we don't always know when it's happening. It's clear at this point that encrypting is something all of us should be doing. Then why don’t we use <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security">TLS (the successor to SSL)</a> everywhere? Every browser in every device supports it. Every server in every data center supports it. Why don’t we just flip the switch?
+Vital personal and business information flows over the Internet more frequently than ever, and we don't always know when it's happening. It's clear at this point that encrypting is something all of us should be doing. Then why don’t we use [TLS (the successor to SSL)](https://en.wikipedia.org/wiki/Transport_Layer_Security) everywhere? Every browser in every device supports it. Every server in every data center supports it. Why don’t we just flip the switch?
 
 The challenge is server certificates. The anchor for any TLS-protected communication is a public-key certificate which demonstrates that the server you’re actually talking to is the server you intended to talk to. For many server operators, getting even a basic server certificate is just too much of a hassle. The application process can be confusing. It usually costs money. It’s tricky to install correctly. It’s a pain to update.
 

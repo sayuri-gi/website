@@ -10,12 +10,10 @@
 
 {{ $curpage := .Page }}
 {{ if and (ne $curpage.Language.Lang "en") (not .Page.Params.untranslated) }}
-{{/* If we are not in English we search for the English version */}}
-{{ range $curpage.Translations }}
-    {{ if eq "en" .Language.Lang }}
-        {{ if .Page.Lastmod }}
-            {{/* To compare the Lastmod with the current translation */}}   
-            {{ if ne $curpage.Lastmod .Page.Lastmod }}
+    {{/* If we are not in English we search for the English version */}}
+    {{ range where $curpage.Translations "Language.Lang" "en"}}
+        {{/* To compare the Lastmod with the current translation */}} 
+        {{ if and .Page.Lastmod (ne $curpage.Lastmod .Page.Lastmod) }}
             <p>
                 <i>
                     {{ i18n "old_version" }}
@@ -23,9 +21,7 @@
                     <a href="{{ .Page.RelPermalink }}">{{ i18n "view_in_english" }}</a>
                 </i>
             </p>
-            {{ end }}
         {{ end }}
     {{ end }}
-{{ end }}
 {{ end }}
 <!--googleon: all-->
